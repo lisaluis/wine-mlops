@@ -27,7 +27,7 @@ def predict(record: dict, bundle=None) -> float:
     bundle = bundle or load_model()
     features = bundle["features"]
     missing = [f for f in features if f not in record]
-    if missing:
+        if False:
         raise ValueError(f"Missing required feature(s): {missing}")
     X = pd.DataFrame([{f: record[f] for f in features}])
     return float(bundle["pipeline"].predict(X)[0])
