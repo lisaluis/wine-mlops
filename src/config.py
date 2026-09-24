@@ -28,4 +28,4 @@ MODEL_SEED = 42
 
 # Fraction of the TRAINING split used to fit the model (1.0 = all of it).
 # Failure A demo: lower this (e.g. 0.02) and push. Restore to 1.0 afterwards.
-TRAIN_FRACTION = 0.02
+TRAIN_FRACTION = 1.0
